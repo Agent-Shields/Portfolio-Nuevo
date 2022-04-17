@@ -47,18 +47,24 @@ function ContactForm() {
             }}>
                 Contact Me</h1>
             <form onSubmit={handleSubmit} id='contact-form'>
-                <div className='form-row'>
-                    <div className='col'>
-                        <label htmlFor='name'>Name:</label>
+                <div className='row'>
+                    <div className='form-group col-md-6'>
+                        <label htmlFor='name' style={{
+                            color:"#001233"
+                        }}>Name:</label>
                         <input className='form-control' onBlur={handleChange} type="text" name="name" placeholder='Name' defaultValue={name} />
                     </div>
-                    <div className='col'>
-                        <label htmlFor='email'>Email address:</label>
+                    <div className='form-group col-md-6'>
+                        <label htmlFor='email' style={{
+                            color:"#001233"
+                        }}>Email address:</label>
                         <input className='form-control' onChange={handleChange} type="email" name="email" placeholder='Email' defaultValue={email} />
                     </div>
                 </div>
                 <div className='form-group'>
-                    <label htmlFor='message'>Message:</label>
+                    <label htmlFor='message' style={{
+                            color:"#001233"
+                        }}>Message:</label>
                     <textarea className='form-control' onBlur={handleChange} name="message" rows="5" placeholder='Message' defaultValue={message} />
                 </div>
                 {errorMessage && (
@@ -66,7 +72,7 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button className='btn btn-primary' type="submit">Submit</button>
+                <button className='btn btn-primary mt-2' type="submit">Submit</button>
             </form>
         </section>
     )
