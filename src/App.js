@@ -7,13 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className='container'>
-      <Header />
-      <Navigation />
+    <div className='container-fluid'>
+      <header>
+        <Header />
+        <Navigation />
+      </header>
       <main>
         <Project />
       </main>
+      <footer>
       <Footer />
+      </footer>
     </div>
   );
 }
