@@ -9,19 +9,29 @@ function Navigation() {
             backgroundSize: "contain",
             minHeight: "200px"
             }}>
-            <h1 className='display-3 col-6'>Johnathan Shields</h1>
+            <h1 className='display-3 col-6' style={{
+                            color: "#023E7D"
+                        }}>Johnathan Shields</h1>
                 <ul className='d-inline-flex list-group-horizontal col-6'>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='#AboutMe'>About Me</a>
+                        <a className='text-decoration-none' href='#AboutMe' style={{
+                            color: "#001233"
+                        }}>About Me</a>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='#Portfolio'>Portfolio</a>
+                        <a className='text-decoration-none' href='#Portfolio' style={{
+                            color: "#001233"
+                        }}>Portfolio</a>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='#Contact'>Contact</a>
+                        <a className='text-decoration-none' href='#Contact' style={{
+                            color: "#001233"
+                        }}>Contact</a>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='#Resume'>Resume</a>
+                        <a className='text-decoration-none' href='#Resume' style={{
+                            color: "#001233"
+                        }}>Resume</a>
                     </li>
                 </ul>
         </nav>
