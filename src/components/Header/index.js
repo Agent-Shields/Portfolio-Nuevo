@@ -3,7 +3,7 @@ import Navigation from '../Navigation';
 
 function Header() {
     return(
-        <section className='m-2 flex-row sticky-top'>
+        <section className='mb-2 flex-row sticky-top'>
             <Navigation />  
         </section>
     )
