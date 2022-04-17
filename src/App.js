@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid min-vh-100'>
       <Header />
       <main>
         <Project />
