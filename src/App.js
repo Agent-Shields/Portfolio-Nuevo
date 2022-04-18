@@ -1,24 +1,33 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header';
+// import Content from './components/Content';
+import Contact from './components/Contact';
+import About from './components/About';
 import Footer from './components/Footer';
-import Project from './components/Project';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
-  const [contactSelected, setContactSelected] = useState(false)
+  // const [contactSelected, setContactSelected] = useState(false)
 
   return (
-    <div className='container-fluid min-vh-100'>
-      <Header>
-      </Header>
-      <main>
-        contactSelected={contactSelected},
-        setContactSelected={setContactSelected}
-        <Project />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className='container-fluid min-vh-100'>
+        <Header />
+        <div className='content'>
+          <Switch>
+            <Route path='/'>
+              <About />
+            </Route>
+            <Route path='/Contact'>
+              <Contact />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

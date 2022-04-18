@@ -1,13 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import coverImage from '../../assets/cover/Generic-Banner-03-blue-Game.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function Navigation(props) {
-
-    const {
-        contactSelected,
-        setContactSelected
-    } = props;
+function Navigation() {
 
     return(
         <nav className='row justify-content-between align-items-center' style={{
@@ -18,26 +14,26 @@ function Navigation(props) {
             <h1 className='display-3 col-6' style={{
                             color: "#023E7D"
                         }}>Johnathan Shields</h1>
-                <ul className='d-inline-flex list-group-horizontal col-6'>
+                <ul className='d-inline-flex list-group-horizontal col-6 links'>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a className='text-decoration-none' onClick={() => setContactSelected(false)} href='#AboutMe' style={{
+                        <Link to='/' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>About Me</a>
+                        }}>About Me</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a className='text-decoration-none' href='#Portfolio' style={{
+                        <Link to='/portfolio' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>Portfolio</a>
+                        }} >Portfolio</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a className='text-decoration-none' href='#Contact' onClick={() => contactSelected(true)} style={{
+                        <Link to='/contact' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>Contact</a>
+                        }}>Contact</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a className='text-decoration-none' href='#Resume' style={{
+                        <Link to='/resume' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>Resume</a>
+                        }}>Resume</Link>
                     </li>
                 </ul>
         </nav>
