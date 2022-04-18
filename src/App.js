@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header';
-// import Content from './components/Content';
 import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
