@@ -1,5 +1,6 @@
 import React from 'react'
 import coverImage from '../../assets/cover/Generic-Banner-03-blue-Game.png'
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Navigation() {
@@ -15,24 +16,24 @@ function Navigation() {
                         }}>Johnathan Shields</h1>
                 <ul className='d-inline-flex list-group-horizontal col-6 links'>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='/' className='text-decoration-none' style={{
+                        <Link to='/' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>About Me</a>
+                        }}>About Me</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='/portfolio' className='text-decoration-none' style={{
+                        <Link to='/portfolio' className='text-decoration-none' style={{
                             color: "#001233"
-                        }} >Portfolio</a>
+                        }} >Portfolio</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='/contact' className='text-decoration-none' style={{
+                        <Link to='/contact' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>Contact</a>
+                        }}>Contact</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <a href='/resume' className='text-decoration-none' style={{
+                        <Link to='/resume' className='text-decoration-none' style={{
                             color: "#001233"
-                        }}>Resume</a>
+                        }}>Resume</Link>
                     </li>
                 </ul>
         </nav>
