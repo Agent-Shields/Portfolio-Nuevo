@@ -14,7 +14,7 @@ function About() {
                 <p className='col-6 text-center m-4' style={{
                     color: "#33415C" 
                 }}>
-                    After graduating from the Dunwoody college of Technology with my associates in Industrial Controls and Robotics, I officially joined the Buhler Automation team as an Automation Engineer with a strong focus on software development. The team was in need of software based engineers and therefore I joined the University of Minnesota's full-stack software bootcamp to bolster my software development fundamentals and fulfill the need of more software based support for my team. With a passion for learning and curiosity for all things programming, I strive to deploy the latest and greatest technologies to help develop dynamic and cutting edge applications for our customers at Buhler!
+                    After graduating from the Dunwoody college of Technology with my associates in Industrial Controls and Robotics, I officially joined the Buhler Automation team as an Automation Engineer with a strong focus on software development. My team was in need of software engineers, therefore, I joined the University of Minnesota's full-stack software bootcamp to bolster my software development fundamentals. With a passion for learning and curiosity for all things programming, I strive to deploy the latest and greatest technologies to help develop dynamic and cutting edge applications for our customers at Buhler!
                 </p>
             </div>
         </section>
