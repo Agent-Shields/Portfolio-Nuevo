@@ -11,7 +11,7 @@ function App() {
   // const [contactSelected, setContactSelected] = useState(false)
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='container-fluid min-vh-100'>
         <Header />
         <div className='content'>
