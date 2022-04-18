@@ -27,7 +27,7 @@ function Resume() {
                 </ul>
                 </h2>
             </div>
-            <div className="row">
+            <div className="row mx-2">
             <h2 style={{
                         color: "#023E7D"
                     }}>Back-end Proficiencies
