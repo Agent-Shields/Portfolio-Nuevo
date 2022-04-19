@@ -4,27 +4,29 @@ import Header from './components/Header';
 import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Portfolio from './components/Portfolio'
 import Resume from './components/Resume';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
-  // const [contactSelected, setContactSelected] = useState(false)
-
   return (
-    <Router basename={process.env.PUBLIC_URL || 'localhost/'}>
+    <Router basename={process.env.PUBLIC_URL || '/'}>
       <div className='container-fluid min-vh-100'>
         <Header />
         <div className='content'>
           <Switch>
-            <Route component={ About } exact path='/'>
+            <Route exact path='/'>
               <About />
             </Route>
-            <Route component={ Contact } exact path='/contact'>
+            <Route exact path='/contact'>
               <Contact />
             </Route>
-            <Route component={ Resume } exact path='/resume'>
+            <Route exact path='/resume'>
               <Resume />
+            </Route>
+            <Route exact path='/portfolio'>
+              <Portfolio />
             </Route>
             <Route path='*'>
               <About />
