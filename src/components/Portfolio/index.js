@@ -2,7 +2,7 @@ import React from "react";
 import Project from "../Project"
 import Outfitters from '../../assets/portfolioPieces/Outfitters.PNG'
 import TimedQuiz from '../../assets/portfolioPieces/QuizProof.PNG'
-import TechBlog from '../../assets/portfolioPieces/Tech-Blog.PNG'
+import NoteTaker from '../../assets/portfolioPieces/NoteTaker.PNG'
 import RandomPass from '../../assets/portfolioPieces/RandomPassProof.jpg'
 import ConcertScout from '../../assets/portfolioPieces/Concert-Scout.png'
 import BudgetTracker from '../../assets/portfolioPieces/Go-Budget-Tracker.PNG'
@@ -22,7 +22,7 @@ function Portfolio() {
                 <Project name="Concert Scout" image={ConcertScout} gitHub="https://github.com/austinslatey/concert-scout"  deployed="https://austinslatey.github.io/concert-scout/" />
             </div>
             <div className="row mx-2">
-                <Project name="Tech-Blog" image={TechBlog} gitHub="https://github.com/Agent-Shields/Tech-Blog"  deployed="https://tech-blog-agent-shields.herokuapp.com/" />
+                <Project name="Note Taker" image={NoteTaker} gitHub="https://github.com/Agent-Shields/Note-Taker"  deployed="https://note-taker-agent-shields.herokuapp.com/" />
                 <Project name="Random Password Generator" image={RandomPass} gitHub="https://github.com/Agent-Shields/Random-Pass"  deployed="https://agent-shields.github.io/Random-Pass/" />
             </div>
             <div className="row mx-2">
