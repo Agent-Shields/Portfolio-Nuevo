@@ -2,9 +2,12 @@ import React from 'react'
 
 function Project() {
     return(
-        <section>
-            <div>Project</div>
-        </section>
+            <div className='col-md-6' style={{
+                minHeight:"200px",
+                maxHeight:"200px",
+            }}>
+                Project
+            </div>
     )
 }
 
