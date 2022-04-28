@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom' 
 
 
 function Project(props) {
@@ -7,12 +8,12 @@ function Project(props) {
 
     function handleMouseEnter(e) {
         setisHovering(true)
-        console.log("enter")
+        // console.log("enter")
     }
 
     function handleMouseLeave() {
         setisHovering(false)
-        console.log('leave')
+        // console.log('leave')
     }
 
     return (
@@ -23,15 +24,19 @@ function Project(props) {
             backgroundImage: `url(${props.image})`,
         }}>
             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`${isHovering ? "show" : "hidden"}`} style={{
-                opacity:'75',
                 maxHeight: "200px",
                 minHeight: "200px",
-                backgroundColor:"darkgray",
-                backgroundSize: "cover"
+                backgroundColor:"rgba(151, 157, 172, .7) ",
+                backgroundSize: "cover",
+                color:"#023E7D"
             }}>
                 <h1 className='row mx-2' >{props.name}</h1>
-                <a href={props.gitHub} alt="GitHub Repository">GitHub Link</a>
-                <a href={props.deployed} alt="Deployed Application">Deployed Application</a>
+                <Link to={{ pathname: `${props.gitHub}`}} target="_blank">
+                <button className='btn btn-primary' alt="GitHub Repository">GitHub Link</button>
+                </Link>
+                <Link to={{ pathname: `${props.deployed}`}} target="_blank">
+                <button className='btn btn-primary' alt="Deployed Application">Deployed Application</button>
+                </Link>
             </div>
         </div>
     )
