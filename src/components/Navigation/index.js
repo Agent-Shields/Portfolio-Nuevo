@@ -16,22 +16,22 @@ function Navigation() {
                         }}>Johnathan Shields</h1>
                 <ul className='d-inline-flex list-group-horizontal col-6 links'>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <Link to='/' className='text-decoration-none' target="_parent"  style={{
+                        <Link to='/' className='text-decoration-none' style={{
                             color: "#001233"
                         }}>About Me</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <Link to='/portfolio' className='text-decoration-none' target="_parent" style={{
+                        <Link to='/portfolio' className='text-decoration-none' style={{
                             color: "#001233"
                         }} >Portfolio</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <Link to='/contact' className='text-decoration-none' target="_parent"  style={{
+                        <Link to='/contact' className='text-decoration-none' style={{
                             color: "#001233"
                         }}>Contact</Link>
                     </li>
                     <li className='list-unstyled fs-2 mx-2'>
-                        <Link to='/resume' className='text-decoration-none' target="_parent"  style={{
+                        <Link to='/resume' className='text-decoration-none' style={{
                             color: "#001233"
                         }}>Resume</Link>
                     </li>
