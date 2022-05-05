@@ -11,6 +11,11 @@ https://github.com/Agent-Shields/Portfolio-Nuevo
 
 https://agent-shields.netlify.app/
 
+## Screenshot 
+
+![PortfolioNuevoScreenshot](../portfolio-nuevo/src/assets/portfolioPieces/PortfolioNuevoScreenshot.PNG)
+
+
 ## Definition of Done
 
 GIVEN a single-page application portfolio for a web developer
